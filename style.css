@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.CH {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    flex-wrap: wrap; 
+}
+
+
+
+.Title_Head {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+.Nav {
+    display: flex;
+    gap: 20px; 
+}
+
+.O1_Head, .O2_Head, .O3_Head {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.O1_Head:hover,
+.O2_Head:hover,
+.O3_Head:hover {
+    background-color: #555;
+}
+
+.O4_Head {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.O4_Head:hover {
+    background-color: #45a049;
+} 
+
+
