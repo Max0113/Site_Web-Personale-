@@ -1,6 +1,7 @@
 *{
     font-family:sans-serif;
 }
+
 body{
     padding: 0;
     margin: 0;
@@ -17,6 +18,7 @@ body{
     background-repeat: no-repeat;
     border-radius: 10px;
 }
+
 .CH {
     display: flex;
     align-items: center;      /* مهم */
@@ -28,8 +30,6 @@ body{
     box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.568);
     text-align: center;
 }
-
-
 
 
 .Title_Head {
@@ -131,8 +131,8 @@ body{
     cursor: pointer;
     font-weight: bold;
     position:absolute;
-    left: 19%;
-    bottom: 45%;
+    left: 20%;
+    bottom: 40%;
 }
 
 .Reserve_Button {
@@ -145,7 +145,7 @@ body{
     font-weight: bold;
     position:absolute;
     left: 10%;
-    bottom: 45%;
+    bottom: 40%;
 }
 
 .Checking_Button:hover {
@@ -159,10 +159,75 @@ body{
 }
 
 .Part2 {
-    padding: 0;
-    margin: 0;
+    padding: 20px 20px;
+    text-align: center;
 }
 
 .Part2 h1 {
-    text-align: center;
-} 
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.Card_Gestion {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Card1 {
+    width: 280px;
+    padding: 30px 20px;
+    background: #111;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Card1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* Icon */
+.Icon_Card1 {
+    font-size: 32px;
+    position: relative;
+    margin-bottom: 20px;
+    color: #b94f4f;
+}
+
+/* Title */
+.Title_Card1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.Discription_Card1 {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.Button_Card1 {
+    border: none;
+    border-radius: 5px;
+    color: #b94f4f;
+    background-color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+    align-items: center;
+}
+
+.Button_Card1 i {
+    margin: 5px 0px;
+}
+
+.Button_Card1:hover {
+    color: #ffffff;
+    background-color: #b94f4f;
+    cursor: pointer;
+}
