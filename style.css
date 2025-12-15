@@ -1,55 +1,168 @@
+*{
+    font-family:sans-serif;
+}
 body{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-image: url('/Design/téléchargement\ \(9\).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
 }
 .CH {
     display: flex;
-    align-content: center;
-    justify-content: space-evenly;
-    padding: 10px 20px;
-    background-color: #333;
+    align-items: center;      /* مهم */
+    justify-content: space-between;
+    padding: 10px 40px;
+    border-radius: 20px;
     color: white;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.568);
+    text-align: center;
 }
+
 
 
 
 .Title_Head {
-    font-size: 24px;
+    align-items: center;
+    padding: 0px 40px;
+    display: flex;
+    font-size: 20px;
     font-weight: bold;
+}
+
+.Imge {
+    padding: 15px 10px;
+    width: 26px;
 }
 
 
 
 .Nav {
     display: flex;
-    gap: 20px; 
+    gap: 30px;
+    align-items: center;
+    flex: 20;
+    justify-content: center;
+    text-align: center;
 }
+
 
 .O1_Head, .O2_Head, .O3_Head {
-    text-decoration: none;
+    text-decoration:none;
     color: white;
     padding: 8px 12px;
-    border-radius: 5px;
+    font-weight: bold;
 }
 
+.O1_Head{
+    border-bottom: 3px #ffffff solid;
+}
 .O1_Head:hover,
 .O2_Head:hover,
 .O3_Head:hover {
-    background-color: #555;
+    border-bottom: 3px #b94f4f solid;
 }
-
+.Button {
+    display: flex;
+}
 .O4_Head {
-    background-color: #4CAF50;
-    color: white;
+    align-items: center;
+    background-color: #ffffff;
+    color: #b94f4f;
     border: none;
-    padding: 8px 18px;
+    padding: 15px 20px;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
+
 }
 
 .O4_Head:hover {
-    background-color: #45a049;
+    background-color: #b94f4f;
+    color: #ffffff;
 } 
 
+.Imge_Body {
+    width: 500px;
+    position:absolute;
+    right: 5%;
+    bottom: 0.1%;
+    z-index: 1;
+}
 
+.circule {
+    width: 400px;
+    height: 400px;
+    background-color: #b94f4f;
+    border-radius: 50%;
+    position:absolute;
+    right: 6%;
+    bottom: 8%;
+    z-index: 0;
+    box-shadow: 10px 10px 80px rgba(255, 56, 56, 0.568);
+}
+
+.h1_Body {
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 70px;
+    position:absolute;
+    left: 10%;
+    bottom: 50%;
+
+}
+
+.Checking_Button {
+    color : #ffffff;
+    background-color: #b94f4f;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    position:absolute;
+    left: 19%;
+    bottom: 45%;
+}
+
+.Reserve_Button {
+    color : #b94f4f;
+    background-color: #ffffff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    position:absolute;
+    left: 10%;
+    bottom: 45%;
+}
+
+.Checking_Button:hover {
+    color : #ffffff;
+    background-color: #000000;
+}
+
+.Reserve_Button:hover {
+    color : #b94f4f;
+    background-color: #000000;
+}
+
+.Part2 {
+    padding: 0;
+    margin: 0;
+}
+
+.Part2 h1 {
+    text-align: center;
+} 
