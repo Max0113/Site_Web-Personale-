@@ -12,7 +12,7 @@ body{
     padding: 0;
     margin: 0;
     height: 100vh;
-    background-image: url('Design/Backrounde.png');
+    background-image: url('/Design/Backrounde.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -158,6 +158,9 @@ body{
     background-color: #000000;
 }
 
+
+/* _______________Part2________________ */
+
 .Part2 {
     padding: 20px 20px;
     text-align: center;
@@ -229,5 +232,55 @@ body{
 .Button_Card1:hover {
     color: #ffffff;
     background-color: #b94f4f;
+    cursor: pointer;
+}
+
+ /* _______________Part3________________ */
+
+.Part3 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #b94f4f;
+    margin: 90px 40px;
+    padding: 80px;
+    color: #fff;
+    border-radius: 20px;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(255, 166, 166, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Part3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(255, 166, 166, 0.762);
+}
+
+.Cout1 .Title_Cout1 {
+    font-size: 40px;
+}
+
+.Cout1 .Text_Cout1 {
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.Cout1 .Button_Cout1 {
+    border: none;
+    border-radius: 5px;
+    color: #b94f4f;
+    background-color: #ffffff;
+    font-weight: bold;
+    padding: 10px 178px;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.Cout1 .Button_Cout1 i {
+    margin: 5px 0px;
+}
+
+.Cout1 .Button_Cout1:hover {
+    color: #ffffff;
+    background-color: #000000;
     cursor: pointer;
 }

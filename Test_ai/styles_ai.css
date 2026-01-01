@@ -1,0 +1,233 @@
+*{
+    font-family:sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-image: url('/Design/Backrounde.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.CH {
+    display: flex;
+    align-items: center;      /* مهم */
+    justify-content: space-between;
+    padding: 10px 40px;
+    border-radius: 20px;
+    color: white;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.568);
+    text-align: center;
+}
+
+
+.Title_Head {
+    align-items: center;
+    padding: 0px 40px;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Imge {
+    padding: 15px 10px;
+    width: 26px;
+}
+
+
+
+.Nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex: 20;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.O1_Head, .O2_Head, .O3_Head {
+    text-decoration:none;
+    color: white;
+    padding: 8px 12px;
+    font-weight: bold;
+}
+
+.O1_Head{
+    border-bottom: 3px #ffffff solid;
+}
+.O1_Head:hover,
+.O2_Head:hover,
+.O3_Head:hover {
+    border-bottom: 3px #b94f4f solid;
+}
+.Button {
+    display: flex;
+}
+.O4_Head {
+    align-items: center;
+    background-color: #ffffff;
+    color: #b94f4f;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.O4_Head:hover {
+    background-color: #b94f4f;
+    color: #ffffff;
+} 
+
+.Imge_Body {
+    width: 500px;
+    position:absolute;
+    right: 5%;
+    bottom: 0.1%;
+    z-index: 1;
+}
+
+.circule {
+    width: 400px;
+    height: 400px;
+    background-color: #b94f4f;
+    border-radius: 50%;
+    position:absolute;
+    right: 6%;
+    bottom: 8%;
+    z-index: 0;
+    box-shadow: 10px 10px 80px rgba(255, 56, 56, 0.568);
+}
+
+.h1_Body {
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 70px;
+    position:absolute;
+    left: 10%;
+    bottom: 50%;
+
+}
+
+.Checking_Button {
+    color : #ffffff;
+    background-color: #b94f4f;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    position:absolute;
+    left: 20%;
+    bottom: 40%;
+}
+
+.Reserve_Button {
+    color : #b94f4f;
+    background-color: #ffffff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    position:absolute;
+    left: 10%;
+    bottom: 40%;
+}
+
+.Checking_Button:hover {
+    color : #ffffff;
+    background-color: #000000;
+}
+
+.Reserve_Button:hover {
+    color : #b94f4f;
+    background-color: #000000;
+}
+
+.Part2 {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.Part2 h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.Card_Gestion {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Card1 {
+    width: 280px;
+    padding: 30px 20px;
+    background: #111;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Card1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* Icon */
+.Icon_Card1 {
+    font-size: 32px;
+    position: relative;
+    margin-bottom: 20px;
+    color: #b94f4f;
+}
+
+/* Title */
+.Title_Card1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.Discription_Card1 {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.Button_Card1 {
+    border: none;
+    border-radius: 5px;
+    color: #b94f4f;
+    background-color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+    align-items: center;
+}
+
+.Button_Card1 i {
+    margin: 5px 0px;
+}
+
+.Button_Card1:hover {
+    color: #ffffff;
+    background-color: #b94f4f;
+    cursor: pointer;
+}
