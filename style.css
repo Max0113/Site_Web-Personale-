@@ -93,7 +93,7 @@ body{
 } 
 
 .Imge_Body {
-    width: 500px;
+    width: 65dvh;
     position:absolute;
     right: 5%;
     bottom: 0.1%;
@@ -101,8 +101,8 @@ body{
 }
 
 .circule {
-    width: 400px;
-    height: 400px;
+    width: 50dvh;
+    height: 50dvh;
     background-color: #b94f4f;
     border-radius: 50%;
     position:absolute;
@@ -122,6 +122,14 @@ body{
 
 }
 
+.Bottom_body {
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    top : 50%;
+    left: 10%;
+}
+
 .Checking_Button {
     color : #ffffff;
     background-color: #b94f4f;
@@ -130,9 +138,21 @@ body{
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    position:absolute;
-    left: 20%;
-    bottom: 40%;
+    z-index: 0;
+}
+
+.Checking_Button::after{
+    content: '';
+    display: block;
+    background: #000;
+    width: 0%;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s ease-in;
 }
 
 .Reserve_Button {
@@ -143,19 +163,31 @@ body{
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    position:absolute;
-    left: 10%;
-    bottom: 40%;
+    z-index: 0;
 }
 
-.Checking_Button:hover {
+.Reserve_Button::after{
+    content: '';
+    display: block;
+    background: #000;
+    width: 0%;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 57.5%;
+    z-index: -1;
+    transition: 0.3s ease-in;
+}
+
+.Checking_Button:hover::after {
+    width: 51%;
     color : #ffffff;
-    background-color: #000000;
 }
 
-.Reserve_Button:hover {
+.Reserve_Button:hover::after {
+    width: 42.5%;
     color : #b94f4f;
-    background-color: #000000;
 }
 
 
@@ -284,3 +316,40 @@ body{
     background-color: #000000;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ___________________Media______________________ */
+
+@media (max-width: 1068px) {
+    .Imge_Body{
+        display: none;
+    }
+    .circule{
+        display: none;
+    }
+    .Part3 {
+        gap: 30px;
+        flex-direction: column;
+    }
+}
+
